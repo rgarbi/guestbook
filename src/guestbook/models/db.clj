@@ -14,5 +14,5 @@
                    :message message
                    :timestamp (new java.util.Date)})))
 
-(defn get-messages []
+(defn get-messages []  
   (select guestbook))

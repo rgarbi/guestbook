@@ -5,7 +5,8 @@
  </div>
 
  <div class="row-fluid">
-    <div class="span8">    
+    <div class="span8"> 
+    <p>List size -> {{ messages|count }}</p>   
       <ul>
       {% for item in messages %}
         <li>
@@ -15,6 +16,8 @@
         </li>
       {% endfor %}
       </ul>
+
+      
         
       {% if error %}
         <p class="error">{{error}}</p>
